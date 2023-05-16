@@ -1,6 +1,7 @@
 import "./App.css";
 import EntriesSection from "./components/EntriesSection";
 import EntryForm from "./components/EntryForm";
+import FavoriteButton from "./components/FavoriteButton";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -12,6 +13,7 @@ function App() {
         <EntryForm />
         <EntriesSection />
       </main>
+
       <Footer />
     </div>
   );
