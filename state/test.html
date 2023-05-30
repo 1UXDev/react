@@ -1,21 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://fonts.cdnfonts.com/css/josefin-sans" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testapp</title>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/roboto");
+      @import url("https://fonts.cdnfonts.com/css/josefin-sans");
+    </style>
 
-    <style type="text/css"></style>
+    <style type="text/css">
+      main {
+        max-width: 600px;
+        margin: 0px auto;
+        color: white;
+      }
+
+      section {
+        margin: 36px 24px;
+        backdrop-filter: blur(8px) brightness(1.15);
+        padding: 36px 24px;
+        border-radius: 12px;
+      }
+
+      article {
+        margin-bottom: 48px;
+      }
+
+      article:nth-child(2) {
+        background: rgba(20, 70, 120, 0.3);
+        margin: -12px -24px;
+        padding: 24px 24px 24px 36px;
+      }
+
+      .weather {
+        background: rgba(20, 70, 120, 0.3);
+        border-radius: 99px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 6vw;
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      .weather .icon {
+        font-size: 4.2em;
+      }
+
+      .weather h1 {
+        font-size: 2.6em;
+        margin-block-end: unset;
+        margin-block-start: unset;
+      }
+
+      h2 {
+        font-size: 1.3em;
+        font-family: "Roboto", sans-serif;
+      }
+
+      /* Style the video: 100% width and height to cover the entire window */
+      #myVideo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      /*
+      article {
+        backdrop-filter: blur(8px) brightness(1.2);
+        color: #000000;
+        margin: 24px 12px;
+        border-radius: 12px;
+        padding: 24px;
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 10vw;
+        font-size: 2em;
+        color: rgb(255, 255, 255);
+        font-weight: 900;
+      }
+
+      header h1 {
+        background-color: rgba(0, 0, 0, 0.24);
+        padding: 12px 24px;
+        border-radius: 99px;
+      }
+
+      header .icon {
+        font-size: 3em;
+      }
+
+      ul {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 6px;
+        padding-inline-start: 0px;
+      }
+      li {
+        background-color: azure;
+        padding: 12px 24px;
+        list-style: none;
+      } */
+    </style>
   </head>
   <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="./1010547092-preview.mp4" type="video/mp4" />
+    </video>
     <main>
-      <article>
-        <h1>The Weather</h1>
-      </article>
-      <video autoplay muted loop id="myVideo">
-        <source src="rain.mp4" type="video/mp4" />
-      </video>
+      <section>
+        <article>
+          <div class="weather">
+            <div class="icon">🌧</div>
+            <h1>13°C</h1>
+          </div>
+        </article>
+
+        <article>
+          <h2>Bad weather is outside, here is what you could do:</h2>
+          <ul>
+            <li>Playstation spielen</li>
+            <li>Mit Oma stricken</li>
+            <li>Brettspiele spielen</li>
+          </ul>
+        </article>
+      </section>
     </main>
   </body>
 </html>
